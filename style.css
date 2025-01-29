@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Estilo global */
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3b63b6;
+    padding: 24px;
+}
+
+nav.menu li {
+    list-style-type: none;
+}
+
+nav.menu > ul {
+    display: flex;
+    gap: 48px;
+}
+
+nav.menu li > a {
+    text-decoration: none;
+    color: rgb(5, 168, 32);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: #fcfcfc;
+}
+
+section {
+    text-align: center;
+    padding: 48px;
+    border-bottom: 1px solid #c0bdbd;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#pagina-inicial {
+    flex-direction: row-reverse;
+}
+
+section#pagina-inicial img {
+    max-width: 40%;
+    height: auto;
+}
+
+section#quem-somos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+section#quem-somos > div {
+    width: 50%; 
+    text-align: left; 
+}
+
+section#quem-somos > img {
+    width: 40%;
+}
+
+button.botao-padrao {
+    padding: 18px 48px;
+    border-radius: 48px;
+    border: 1px solid #3b63b6;
+    background-color: #3b63b6;
+    font-size: 16px;
+    color: white;
+    margin: 24px 0;
+}
+
+table {
+    width: 70%;
+}
+
+footer {
+    padding: 24px;
+}
+
+footer > p {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+
+section#planos table,
+td,
+th {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 12px;
+}
+
+section#planos {
+    flex-direction: column;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25d366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-button:hover {
+    background-color: #20b857;
+}
+
+.botao-padrao:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header {
+        background: #e01e7f;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav.menu > ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav.menu li {
+        margin: 10px 0;
+    }
+
+    nav.menu li > a {
+        font-size: 1rem;
+    }
+
+    section#quem-somos {
+        flex-direction: column; 
+        gap: 24px;
+    }
+
+    section#quem-somos > img {
+        width: 80%; 
+    }
+
+    section#quem-somos > div {
+        width: 100%;
+        text-align: left; 
+    }
+
+    
+
+    main {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        background: #DC3545; 
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav.menu li > a {
+        font-size: 14px;
+    }
+
+    section#quem-somos > img {
+        width: 100%;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
